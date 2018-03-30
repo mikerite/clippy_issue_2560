@@ -1,0 +1,14 @@
+[package]
+name = "clippy_issue_2560"
+version = "0.1.0"
+authors = ["Michael Wright <mikerite@lavabit.com>"]
+
+[dependencies]
+clippy = { optional = true, version = "=0.0.189" }
+proc-macro2 = "=0.2.3"
+
+[lib]
+proc-macro = true
+
+[features]
+default = ["clippy", "proc-macro2/nightly"]
